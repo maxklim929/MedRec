@@ -17,7 +17,7 @@ public class Patient
 		age = 0;
 		height = 0;
 		weight = 0;
-		gender = "male";
+		gender = "Male";
 		phoneNumber = "None";
 		this.status = false;
 		//add bmi and bloodPress
@@ -26,10 +26,6 @@ public class Patient
 	public Patient(String name, int age, double height, int weight, String gender, String phoneNumber,
 			boolean status) throws IllegalArgumentException
 	{
-		if (!(gender.equals("male") || gender.equals("female")))
-		{
-			throw new IllegalArgumentException();
-		}
 		this.name = name;
 		this.age = age;
 		this.height = height;
